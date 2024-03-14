@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;;
+    height: 100vh;
+}
+#heading{
+    /* border: 2px solid rgb(10, 9, 9); */
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    color: rgb(187, 53, 53);
+    font-weight: bold;
+    text-shadow: 1px 1px cadetblue;
+    background-color: aquamarine;
+}
+.green{
+    color: green;
+}
+.gameTool{
+    /* border: 2px solid black; */
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.img{
+    /* border: 2px solid black; */
+    border-radius: 40px;
+    width: 200px;
+    height: 200px;
+    padding-bottom: 30px;
+    margin-bottom: 5px;
+    margin-right: 50px;
+    background-color: palevioletred;
+    
+}
+.img:hover{
+    border: 5px solid black;
+}
+.score-board{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.score{
+    /* border: 2px solid black; */
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    border-radius: 30px;
+    width: 150px;
+    text-align: center;
+    background-color: aqua;
+    
+}
+.user-score{
+    /* border: 2px solid black; */
+    text-align: center;
+    margin-bottom: 5px;
+    color: blue;
+    font-size: 30px;
+}
+.comp-score{
+    text-align: center;
+    margin-bottom: 5px;
+    color: red;
+    font-size: 30px;
+}
+#user-move{
+    /* border: 2px solid black; */
+    text-align: center;
+   padding: 20px;
+   font-size: 30px;
+   font-style: italic;
+   color: green;
+   font-weight: bold;
+}
