@@ -8,29 +8,30 @@ let compChoice=()=>{
      return arr[index];
 }
 let drawGame=()=>{
-    console.log("Game was Draw");
-    userMove.innerText=" Match Draw"
+    console.log("Computer choice "+computerChoice +" Game was Draw");
+    userMove.innerText=`Computer choice: ${computerChoice } , Match Draw`;
 }
 let showWinner = (userWin)=>{
     if(userWin==true){
-     console.log("you won the game");
+     console.log("Computer choice "+computerChoice +" you won the game");
      let userScore=document.querySelector(".user-score")
       userScore.innerText=`${i++}`;
-      userMove.innerText="you won";
+      userMove.innerText= `Computer choice: ${computerChoice } , you won`;
     }
     else{
-        console.log("you loss the game");
+        console.log("Computer choice "+computerChoice +" you loss the game");
         let compScore=document.querySelector(".comp-score");
         compScore.innerText=j++;
-        userMove.innerText= "you loss";
+        userMove.innerText= `Computer choice: ${computerChoice } , you loss`;
     }
 
 }
 
-
+let computerChoice = compChoice();
 let playGame= (userChoice)=>{
          console.log("user choice is ", userChoice);
-        let computerChoice = compChoice();
+        // let computerChoice = compChoice();
+        computerChoice = compChoice();
         console.log("comp choice is ",computerChoice);
 
         if(userChoice===computerChoice){
